@@ -24,6 +24,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install poetry
     
+    - name: Generate poetry.lock
+      run: poetry lock
+    
     - name: Install dependencies
       run: poetry install
     

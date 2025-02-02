@@ -1,15 +1,15 @@
 [tool.poetry]
-name = "ssl-install-app-in-windows"
+name = "ssl-installer"
 version = "0.1.0"
-description = "Script for installing Local SSL in windows10"
-authors = ["aitrics-john <158417518+aitrics-john@users.noreply.github.com>"]
+description = "SSL Certificate Installer"
+authors = ["Your Name <your.email@example.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "3.11.10"
-pyinstaller = "^6.11.1"
+python = "^3.11"
+pyinstaller = "^6.11.0"
 
 
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"

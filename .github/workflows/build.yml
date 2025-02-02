@@ -26,10 +26,10 @@ jobs:
     
     - name: Build executable
       run: |
-        pyinstaller --onefile --windowed --icon=se.png --uac-admin --name SSLInstaller app.py
+        pyinstaller --name SSLInstaller --onefile --windowed --icon=se.png --uac-admin app.py
     
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
-        name: ssl-installer
-        path: dist/*.exe 
+        name: SSLInstaller
+        path: dist/SSLInstaller.exe 
